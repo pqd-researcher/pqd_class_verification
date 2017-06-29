@@ -13,19 +13,26 @@ ST library is implemented by using FFTW library. A MEX file created for Matlab _
 ## Signal models
 
 #### Normal signal (Pure Sine):
-y(t) = A.sin⁡(ωt)	 { A = 1V (p.u.) ω = 2π.50 rad/sec }
+y(t) = A.sin⁡(ωt)
+
+* A = 1V (p.u.) 
+* ω = 2π.50 rad/sec 
 
 #### Voltage Sag (Dip):
-y(t) = A[1 - α( u(t - t<sub>1</sub> ) -u(t - t<sub>2</sub> ) )]sin(ωt) {  0.1 < α < 0.9; T < t<sub>2</sub> - t<sub>1</sub> < 5T }
+y(t) = A[1 - α( u(t - t<sub>1</sub> ) -u(t - t<sub>2</sub> ) )]sin(ωt)
+
+* 0.1 < α < 0.9
+* T < t<sub>2</sub> - t<sub>1</sub> < 5T
 
 #### Harmonics:
 
 y(t) = α<sub>1</sub>sin(ωt)+α<sub>3</sub>sin(3ωt)+α<sub>5</sub>sin(5ωt)+α<sub>7</sub>sin(7ωt) 
 
-* 0.05<α<sub>3</sub><0.15
-* 0.05<α<sub>5</sub><0.15
-* 0.05<α<sub>7</sub><0.15
+* 0.05 < α<sub>3</sub> < 0.15
+* 0.05 < α<sub>5</sub> < 0.15
+* 0.05 < α<sub>7</sub> < 0.15
 * ∑α<sub>i</sub><sup>2</sup> = 1
+* Calculate α<sub>1</sub> by using the equation above 
 
 
 
