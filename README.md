@@ -5,13 +5,12 @@ Example study on Power Quality Disturbance Classification. Five periods of power
 2. Sag
 3. Harmonics
 
-For each type of distrubance, 50 random signals according to signals models specified in the literature are generated. File *train.m* is used to traing the ANN with 150 random signals (3x50). Trainedd ANN is saves as **neuro.mat**. Also features that are used for training is saved as **features.mat**.  
+For each type of distrubance, 50 random signals according to signals models specified in the literature are generated. File *train.m* is used to traing the ANN with 150 random signals (3x50). Trainedd ANN is saves as **neuro.mat**. Also features that are used for training is saved as **features.mat**. File *confusion.m* is used to evaluate the ANN against newly created signal set with the random parameters. A confusion matrix is constructed after the validation of 150 signals.
 
 ## ST Library
 ST library is implemented by using FFTW library. A MEX file created for Matlab _st_ function. Library is tested with Matlab r2013b 64 bits on Windows 7 64 bits.
 
 ## Signal models
-
 
 ### Normal signal (Pure Sine):
 y(t) = A.sin⁡(ωt)	 { A = 1V (p.u.) ω = 2π.50 rad/sec }
