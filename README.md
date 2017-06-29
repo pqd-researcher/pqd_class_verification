@@ -17,5 +17,5 @@ ST library is implemented by using FFTW library. A MEX file created for Matlab _
 y(t) = A.sin⁡(ωt)	 { A = 1V (p.u.) ω = 2π.50 rad/sec }
 
 ### Voltage Sag (Dip):
-y(t) = A[1 - α( u(t - t<sub>1</sub> ) -u(t - t<sub>2</sub> ))]sin(ωt) {  0.1 < α < 0.9; T < t<sub>2</sub> - t<sub>1</sub> < 5T }
+y(t) = A[1 - α( u(t - t<sub>1</sub> ) -u(t - t<sub>2</sub> ) )]sin(ωt) {  0.1 < α < 0.9; T < t<sub>2</sub> - t<sub>1</sub> < 5T }
 
