@@ -7,4 +7,12 @@ Example study on Power Quality Disturbance Classification. Five periods of power
 
 For each type of distrubance, 50 random signals according to signals models specified in the literature are generated.
 
+## ST Library
+ST library is implemented by using FFTW library. A MEX file created for Matlab _st_ function. Library is tested with Matlab r2013b on Windows 7 64 bits.
+
 ## Signal models
+
+### Normal signal (Pure Sine):
+y(t) = A.sin⁡(ωt)	 { A = 1V (p.u.) ω = 2π.50 rad/sec }
+
+
