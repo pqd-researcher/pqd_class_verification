@@ -274,6 +274,10 @@ end
 % Train with gradient decent, hidden layer count equals 2*num_inputs+1
 pq_net = feedforwardnet(2*7+1, 'traingd');
 
+% Gradient descent convergences too slow; Levenberg-Marquadt can be used
+% for backpropagation
+% pq_net = feedforwardnet(2*7+1, 'trainlm');
+
 pq_net.layers{1}.transferFcn= 'tansig';
 pq_net.layers{2}.transferFcn= 'purelin';
 
@@ -288,7 +292,8 @@ pq_net.outputs{2}.processFcns = {};
 
 [pq_net tr] = train(pq_net, features, target_vector);
 
-% Save both features and trained net
+% Save both features and trained net with performance plot
 save('features.mat','features');
 save('neuro.mat', 'pq_net');
+save('perfplot.mat', 'tr');
 
