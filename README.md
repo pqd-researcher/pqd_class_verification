@@ -13,7 +13,7 @@ ST library is implemented by using FFTW library. A MEX file created for Matlab _
 ## Signal models
 
 #### Normal signal (Pure Sine):
-y(t) = A.sin⁡(ωt)
+y(t) = Asin⁡(ωt)
 
 * A = 1V (p.u.) 
 * ω = 2π.50 rad/sec 
