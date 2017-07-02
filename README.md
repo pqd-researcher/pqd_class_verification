@@ -15,11 +15,12 @@ ST library is implemented by using FFTW library. A MEX file created for Matlab _
 #### Normal signal (Pure Sine):
 y(t) = Asin⁡(ωt)
 
-* A = 1V (p.u.) 
-* ω = 2π.50 rad/sec 
+* A = 1V (p.u.)
+* ω = 2π.50 rad/sec
+* T = 20 ms
 
 #### Voltage Sag (Dip):
-y(t) = A[1 - α( u(t - t<sub>1</sub> ) -u(t - t<sub>2</sub> ) )]sin(ωt)
+y(t) = A[1 - α( u(t - t<sub>1</sub> ) - u(t - t<sub>2</sub> ) )]sin(ωt)
 
 * 0.1 < α < 0.9
 * T < t<sub>2</sub> - t<sub>1</sub> < 5T
@@ -33,8 +34,5 @@ y(t) = α<sub>1</sub>sin(ωt)+α<sub>3</sub>sin(3ωt)+α<sub>5</sub>sin(5ωt)+α
 * 0.05 < α<sub>7</sub> < 0.15
 * ∑α<sub>i</sub><sup>2</sup> = 1
 * Calculate α<sub>1</sub> by using the equation above 
-
-
-
 
 
