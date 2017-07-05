@@ -7,6 +7,12 @@ Example study on Power Quality Disturbance Classification. Five periods of power
 
 For each type of distrubance, 50 random signals according to signals models specified in the literature are generated. File *train.m* is used to traing the ANN with 150 random signals (3x50). Trainedd ANN is saves as **neuro.mat**. Also features that are used for training is saved as **features.mat**. File *confusion.m* is used to evaluate the ANN against newly created signal set with the random parameters. A confusion matrix is constructed after the validation of 150 signals.
 
+### Videos on Practical Applications
+
+This is a single phase real-time PQ classification test. Classification Software is running on Raspberry Pi 3. Sag and Interruption cases are simulated by using a potantiometer connected to output on an AC power adapter.
+
+http://www.dailymotion.com/video/x5skuoy
+
 ## ST Library
 ST library is implemented by using FFTW library. A MEX file created for Matlab _st_ function. Library is tested with Matlab r2013b 64 bits on Windows 7 64 bits.
 
