@@ -9,9 +9,13 @@ For each type of distrubance, 50 random signals according to signals models spec
 
 ### Videos on Practical Applications
 
-This is a single phase real-time PQ classification test. Classification Software is running on Raspberry Pi 3. Sag and Interruption cases are simulated by using a potantiometer connected to output on an AC power adapter.
+This is a single phase real-time PQ classification test. Classification Software is running on Raspberry Pi 3. Sag and Interruption cases are simulated by using a potentiometer connected to output of an AC power adapter.
 
-http://www.dailymotion.com/video/x5skuoy
+[Raspberry Pi 3 Power Quality Classifier](http://www.dailymotion.com/video/x5skuoy)
+
+This is a three phase real-time PQ classification test. Classification Software is running on a Notebook Computer.
+
+[Three Phase Power Quality Classifier](http://www.dailymotion.com/video/x5scja8_real-time-power-quality-classifier-application_tech)
 
 ## ST Library
 ST library is implemented by using FFTW library. A MEX file created for Matlab _st_ function. Library is tested with Matlab r2013b 64 bits on Windows 7 64 bits.
