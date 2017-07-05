@@ -5,7 +5,7 @@ Example study on Power Quality Disturbance Classification. Five periods of power
 2. Sag
 3. Harmonics
 
-For each type of distrubance, 50 random signals according to signals models specified in the literature are generated. File *train.m* is used to traing the ANN with 150 random signals (3x50). Trainedd ANN is saves as **neuro.mat**. Also features that are used for training is saved as **features.mat**. File *confusion.m* is used to evaluate the ANN against newly created signal set with the random parameters. A confusion matrix is constructed after the validation of 150 signals.
+For each type of distrubance, 50 random signals according to the signal models specified in the literature are generated. Sampling rate of synthetic signals is 10 ksps. File *train.m* is used to traing the ANN with 150 random signals (3x50). Trained ANN is saved as **neuro.mat**. Also features that are used for training is saved as **features.mat**. File *confusion.m* is used to evaluate the ANN against newly created signal set with the random parameters. A confusion matrix is constructed after the validation of 150 signals.
 
 ### Videos on Practical Applications
 
