@@ -5,7 +5,7 @@ Example study on Power Quality Disturbance Classification. Five periods of power
 2. Sag
 3. Harmonics
 
-For each type of distrubance, 50 random signals according to the signal models specified in the literature are generated. Sampling rate of synthetic signals is 10 ksps. File *train.m* is used to traing the ANN with 150 random signals (3x50). Trained ANN is saved as **neuro.mat**. Also features that are used for training is saved as **features.mat**. File *confusion.m* is used to evaluate the ANN against newly created signal set with the random parameters. A confusion matrix is constructed after the validation of 150 signals.
+For each type of distrubance, 50 random signals according to the signal models<sup>[1],[2],[3]</sup> specified in the literature are generated. Sampling rate of synthetic signals is 10 ksps. File *train.m* is used to traing the ANN with 150 random signals (3x50). Trained ANN is saved as **neuro.mat**. Also features that are used for training is saved as **features.mat**. File *confusion.m* is used to evaluate the ANN against newly created signal set with the random parameters. A confusion matrix is constructed after the validation of 150 signals.
 
 ### Videos on Practical Applications
 
@@ -43,4 +43,10 @@ y(t) = α<sub>1</sub>sin(ωt)+α<sub>3</sub>sin(3ωt)+α<sub>5</sub>sin(5ωt)+α
 * 0.05 < α<sub>5</sub> < 0.15
 * 0.05 < α<sub>7</sub> < 0.15
 * ∑α<sub>i</sub><sup>2</sup> = 1
-* Calculate α<sub>1</sub> by using the equation above 
+* Calculate α<sub>1</sub> by using the equation above
+
+## References
+
+1. N. C. F. Tse, “Practical application of wavelet to power quality analysis (Published Conference Proceedings style)” in Proc. IEEE PES Gen. Meeting, Montreal, 2006, pp. 1–5.
+2. R. Kumar, B. Singh, D. T. Shahani, A. Chandra and K. Al-Haddad, “Recognition of power quality disturbances using S-Transform-Based ANN classifier and rule-based Decision tree”, IEEE Transactions on Industry Applications, vol. 51 no. 2, pp. 1249-1258, Mar. 2015.
+3. R. Hooshmand and A. Enshaee, “Detection and classification of single and combined power quality disturbances using fuzzy systems oriented by particle swarm optimization algorithm”, Electric Power Systems Research, vol. 80, no. 12, pp. 1552-1561, Jul. 2010.
