@@ -291,7 +291,19 @@ fprintf('%s %6d %10d %13d\r', 'Normal', acc_table(1,1), acc_table(1, 2), acc_tab
 fprintf('%s %9d %10d %13d\r', 'Sag',     acc_table(2,1), acc_table(2, 2), acc_table(2, 3));
 fprintf('%s %3d %10d %13d\r', 'Harmonics',   acc_table(3,1), acc_table(3, 2), acc_table(3, 3));
 
+%% Calculate overall accuracy
 
+acq_table = acc_table;
+
+for i=1:3
+    acq_table(i, i) = 0;
+end
+
+total = sum(acq_table(:));
+
+accuracy = 100 - total/sum(acc_table(:))*100;
+
+fprintf('\r\nOverall Accuracy: %7.2f%%\r\n', accuracy);
 
 
 
