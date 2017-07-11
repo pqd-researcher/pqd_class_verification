@@ -9,11 +9,16 @@ For each type of distrubance, 50 random signals according to the signal models<s
 
 ### File versions for comparisons
 Files in this folder:
-*train.m*: The neural network is trained with the synthetic signals with harmonics
-*confusion.m*: The neural network is against synthetic signals with harmonics
+* *train.m*: The neural network is trained with the synthetic signals with harmonics
+* *confusion.m*: The neural network is tested against synthetic signals with harmonics
 
-Folder synth_vs_synth: 
+Folder **synth_vs_synth**: 
+* *train.m*: The neural network is trained with the synthetic signals only
+* *confusion.m*: The neural network is tested against synthetic signals only
 
+Folder **synth_vs_harmonics**: Overall accuracy will decrease beacuse of _synthetic_ vs _synthetic with harmonics_ test 
+* *train.m*: The neural network is trained with the synthetic signals only
+* *confusion.m*: The neural network is tested against synthetic signals with harmonics
 
 ### Videos on Practical Applications
 
