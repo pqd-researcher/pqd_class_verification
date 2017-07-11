@@ -7,6 +7,14 @@ Example study on Power Quality Disturbance Classification. Five periods of power
 
 For each type of distrubance, 50 random signals according to the signal models<sup>[1],[2],[3]</sup> specified in the literature are generated. Sampling rate of synthetic signals is 10 ksps. File *train.m* is used to traing the ANN with 150 random signals (3x50). Trained ANN is saved as **neuro.mat**. Also features that are used for training is saved as **features.mat**. File *confusion.m* is used to evaluate the ANN against newly created signal set with the random parameters. A confusion matrix is constructed after the validation of 150 signals.
 
+### File versions for comparisons
+Files in this folder:
+*train.m*: The neural network is trained with the synthetic signals with harmonics
+*confusion.m*: The neural network is against synthetic signals with harmonics
+
+Folder synth_vs_synth: 
+
+
 ### Videos on Practical Applications
 
 This is a single phase real-time PQ classification test. Classification Software is running on Raspberry Pi 3. Sag and Interruption cases are simulated by using a potentiometer connected to output of an AC power adapter.
